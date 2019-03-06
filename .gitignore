@@ -1,0 +1,5 @@
+# Ignore the compiled python script
+*.pyc
+
+# Ignore the checkpoints of the jupyter notebooks
+.ipynb_checkpoints/
