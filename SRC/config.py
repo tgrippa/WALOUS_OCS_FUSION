@@ -10,8 +10,7 @@ import os
 # Initialize dictionnaries
 config_parameters = {}
 data = {}
-rule_file = {}
-roads_veloc = {}
+
 
 ## Please update the following paths according to your own configuration 
 config_parameters['GISBASE'] = '/home/tais/SRC/GRASS/grass_trunk/dist.x86_64-pc-linux-gnu'
@@ -25,8 +24,8 @@ config_parameters['permanent_mapset'] = 'PERMANENT' # name of the permanent maps
 config_parameters['outputfolder'] = '../../Results'
 
 ## The following path linking to datasets should be changed according to your own folder organization 
-data['training_points'] = '../../../Data/points_fusion/points_fusion_1500.gpkg'
-data['obia_folder'] = '../../../Results/obia_2016/HERVE'
-data['pix_orth'] = '../../../Results/pixel_2016/walous_pixelbassed_2016_raw.tif'
-data['pix_senti'] = '../../../Results/pixel_2016/rf2016_2dates_SAR_walous.tif'
+data['training_points'] = '../../../Data/points_fusion_all/points_fusion_all.shp'
+data['obia_folder'] = '../../../Data/obia_2016/HERVE'
+data['pix_orth'] = '../../../Data/pixel_2016/walous_pixelbassed_2016_raw.tif'
+data['pix_senti'] = '../../../Data/pixel_2016/rf2016_2dates_SAR_walous.tif'
 

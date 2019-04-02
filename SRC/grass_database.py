@@ -45,6 +45,6 @@ def working_mapset(gisdb_path,location_name,mapset_name):
 	## Launch GRASS GIS working session in the mapset
 	if os.path.exists(os.path.join(gisdb_path,location_name,mapset_name)):
 		gsetup.init(os.environ['GISBASE'], gisdb_path,location_name,mapset_name)
-		print "You are now working in mapset '%s'"%mapset_name
+		print "You are now working in mapset '%s/%s'"%(location_name,mapset_name)
 	else: 
 		print "'%s' mapset doesn't exists in '%s'"%(mapsetname,user["gisdb"])
