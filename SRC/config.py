@@ -21,7 +21,7 @@ config_parameters['njobs'] = 8
 ## The following parameters should not be changed normally
 config_parameters['gisdb'] = '../../GRASSDATA' # path to GRASSDATA folder
 config_parameters['permanent_mapset'] = 'PERMANENT' # name of the permanent mapset
-config_parameters['outputfolder'] = '../../Results'
+config_parameters['outputfolder'] = '../../../Results'
 
 ## The following path linking to datasets should be changed according to your own folder organization 
 data['training_points'] = '../../../Data/points_fusion_all/points_fusion_all.shp'
