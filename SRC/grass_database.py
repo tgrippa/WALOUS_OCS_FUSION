@@ -47,4 +47,4 @@ def working_mapset(gisdb_path,location_name,mapset_name):
 		gsetup.init(os.environ['GISBASE'], gisdb_path,location_name,mapset_name)
 		return "You are now working in mapset '%s/%s'"%(location_name,mapset_name)
 	else: 
-		return "'%s' mapset doesn't exists in '%s'"%(mapsetname,user["gisdb"])
+		return "'%s' mapset doesn't exists in '%s'"%(mapset_name,gisdb_path)
