@@ -50,3 +50,6 @@ data['binary_forest'] = ('forest','../../../Data/masque_forestier/masque_forest_
 data['binary_hydro'] = ('hydro','../../../Data/squelette_vectoriel/Hydro_mask_31370.tif') # 2 m res.
 data['binary_roadnet'] = ('roadnet','../../../Data/squelette_vectoriel/Roadnet_mask_31370.tif') # 2 m res.
 data['binary_built'] = ('built','../../../Data/squelette_vectoriel/Buildings_mask_31370.tif') # 1 m res.
+
+## Color rule file
+data['color_file'] = "/media/tais/data/WALOUS/Data/fusion_colors.txt"
