@@ -37,7 +37,10 @@ def CategoStats(rasterLayer, zone_map, cl_list=[], colpref="", prop=True, mode=T
         if row[0] not in totals_dict: # Will pass the condition only if the current zone ID does not exists in the dictionary
             totals_dict[row[0]] = {} # Declare a new embedded dictionnary for the current zone ID
         totals_dict[row[0]][row[1]] = int(row[2])
-
+    # Delete key '*' in 'totals_dict' that could append if there are null values on the zone raster
+    if "*" in totals_dict:
+        del totals_dict["*"]
+    
     ### MODAL VALUE
     # modal class of each zone
     if mode:
