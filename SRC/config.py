@@ -30,6 +30,8 @@ config_parameters['outputfolder_classfeatures'] = os.path.join(config_parameters
 config_parameters['outputfolder_training_sample'] = os.path.join(config_parameters['outputfolder'],"Training_sample")
 config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF")
 config_parameters['outputfolder_classifRF_tiles'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_tiles")
+config_parameters['outputfolder_classifRF_csv'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_csv")
+
 
 ## Other path 
 config_parameters['list_tiles'] = os.path.join(config_parameters['outputfolder'],"list_tiles")
@@ -42,7 +44,7 @@ data['training_points'] = ('training','../../../Data/points_fusion_all/points_fu
 data['obia_folder'] = '../../../Data/obia_2018'
 #data['ortho_lc'] = ('ortho_lc','../../../Data/pixel_2018/walous_pixelbassed_2016_raw.tif') # 1 m res.
 data['ortho_lc'] = ('ortho_lc','../../../Data/pixel_2018') # 1 m res.
-data['senti_lc'] = ('sent_lc','../../../Data/pixel_2018/Walous_LC2018_RF_recoded.tif.tif') # 10 m res.
+data['senti_lc'] = ('sent_lc','../../../Data/pixel_2018/Walous_LC2018_ML_recoded_wal_31370.tif') # 10 m res.   #VERSION MAXIMUM LIKELYHOOD
 data['senti_croptype'] = ('senti_croptype','../../../Data/CropType/crop2016_type_31370.tif') # 10 m res.
 data['binary_crop'] = ('binary_crop','../../../Data/CropType/crop2016_cm_31370.tif') # 10 m res.
 data['binary_agri'] = ('SIGEC','../../../Data/SIGEC2017/SIGEC2017_mask_31370.tif') # 10 m res.
