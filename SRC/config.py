@@ -40,9 +40,9 @@ config_parameters['rf_trained_model'] = os.path.join(config_parameters['outputfo
 
 ## The following path linking to datasets should be changed according to your own folder organization 
 data['tiles'] = ('tiles','/media/tais/data/WALOUS/Data/obia_2018/tuiles.gpkg') # Processing tiles (from OBIA processing)
+data['tiles_gpkg_layer'] = 'tuiles_4zonestest_intersected_with_UCLextend'
 data['training_points'] = ('training','../../../Data/points_fusion_all/points_fusion_all.shp')
 data['obia_folder'] = '../../../Data/obia_2018'
-#data['ortho_lc'] = ('ortho_lc','../../../Data/pixel_2018/walous_pixelbassed_2016_raw.tif') # 1 m res.
 data['ortho_lc'] = ('ortho_lc','../../../Data/pixel_2018') # 1 m res.
 data['senti_lc'] = ('sent_lc','../../../Data/pixel_2018/Walous_LC2018_ML_recoded_wal_31370.tif') # 10 m res.   #VERSION MAXIMUM LIKELYHOOD
 data['senti_croptype'] = ('senti_croptype','../../../Data/CropType/crop2016_type_31370.tif') # 10 m res.
