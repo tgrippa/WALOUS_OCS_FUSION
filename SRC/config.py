@@ -21,7 +21,7 @@ config_parameters['njobs'] = 6
 ## The following parameters should not be changed normally
 config_parameters['gisdb'] = '../../GRASSDATA' # path to GRASSDATA folder
 config_parameters['permanent_mapset'] = 'PERMANENT' # name of the permanent mapset
-config_parameters['outputfolder'] = '../../../Results'
+config_parameters['outputfolder'] = '../../../Results_V2'
 config_parameters['location'] = "WALOUS_31370"
 
 ## Other folder for automatic output
@@ -31,6 +31,7 @@ config_parameters['outputfolder_training_sample'] = os.path.join(config_paramete
 config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF")
 config_parameters['outputfolder_classifRF_tiles'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_tiles")
 config_parameters['outputfolder_classifRF_csv'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_csv")
+config_parameters['outputfolder_classifRF_valid'] = os.path.join(config_parameters['outputfolder_classifRF'],"test_valid")
 
 
 ## Other path 
@@ -43,6 +44,8 @@ data['tiles'] = ('tiles','/media/tais/data/WALOUS/Data/obia_2018/tuiles.gpkg') #
 data['tiles_gpkg_layer'] = 'tuiles_4zonestest_intersected_with_UCLextend'
 data['training_points'] = ('training','../../../Data/points_fusion/Walous_pts_fusion.gpkg')
 data['training_points_gpkg_layer'] = 'All_points'
+data['validation_points'] = ('validation','../../../Data/points_validation/walous_fusion_pt_validation.gpkg')
+data['validation_points_gpkg_layer'] = ('All_points','batch1','batch2')
 data['obia_folder'] = '../../../Data/obia_2018'
 data['ortho_lc'] = ('ortho_lc','../../../Data/pixel_2018') # 1 m res.
 data['senti_lc'] = ('sent_lc','../../../Data/pixel_2018/Walous_LC2018_ML_recoded_wal_31370.tif') # 10 m res.   #VERSION MAXIMUM LIKELYHOOD
