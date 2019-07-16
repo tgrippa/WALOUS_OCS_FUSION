@@ -12,3 +12,5 @@ def check_create_dir(path):
 	else: 
 		os.makedirs(path) 
 		print "The folder '%s' has been created"%path
+		
+#Test ATOM auto-fetch
