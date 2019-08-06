@@ -12,9 +12,10 @@ config_parameters = {}
 data = {}
 
 
-## Please update the following paths according to your own configuration 
+## Please update the following paths according to your own configuration
 config_parameters['GISBASE'] = '/usr/lib/grass76'
-config_parameters['PYTHONLIB'] = '/usr/lib/python2.7'
+#config_parameters['PYTHONLIB'] = '/usr/lib/python2.7'
+config_parameters['PYTHONLIB'] = '/usr/bin/python2'
 config_parameters['locationepsg'] = '31370' #  EPSG code for Belgian Lambert 1972
 config_parameters['njobs'] = 6
 
@@ -28,18 +29,18 @@ config_parameters['location'] = "WALOUS_31370"
 config_parameters['outputfolder_Logfile'] = os.path.join(config_parameters['outputfolder'],"Log_file")
 config_parameters['outputfolder_classfeatures'] = os.path.join(config_parameters['outputfolder'],"Classification_features")
 config_parameters['outputfolder_training_sample'] = os.path.join(config_parameters['outputfolder'],"Training_sample")
-config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF")
+config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF_TEST")
 config_parameters['outputfolder_classifRF_tiles'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_tiles")
 config_parameters['outputfolder_classifRF_csv'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_csv")
 config_parameters['outputfolder_classifRF_valid'] = os.path.join(config_parameters['outputfolder_classifRF'],"test_valid")
 
 
-## Other path 
+## Other path
 config_parameters['list_tiles'] = os.path.join(config_parameters['outputfolder'],"list_tiles")
 config_parameters['pixel_classes_list'] = os.path.join(config_parameters['outputfolder'],"pixel_classes_list")
 config_parameters['rf_trained_model'] = os.path.join(config_parameters['outputfolder_classifRF'],"rf_trained_model.rda")
 
-## The following path linking to datasets should be changed according to your own folder organization 
+## The following path linking to datasets should be changed according to your own folder organization
 data['tiles'] = ('tiles','/media/tais/data/WALOUS/Data/obia_2018/tuiles.gpkg') # Processing tiles (from OBIA processing)
 data['tiles_gpkg_layer'] = 'tuiles_4zonestest_intersected_with_UCLextend'
 data['training_points'] = ('training','../../../Data/points_fusion/Walous_pts_fusion.gpkg')
