@@ -3,3 +3,4 @@
 
 # Ignore the checkpoints of the jupyter notebooks
 .ipynb_checkpoints/
+.RData
