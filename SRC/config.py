@@ -29,8 +29,9 @@ config_parameters['location'] = "WALOUS_31370"
 config_parameters['outputfolder_Logfile'] = os.path.join(config_parameters['outputfolder'],"Log_file")
 config_parameters['outputfolder_classfeatures'] = os.path.join(config_parameters['outputfolder'],"Classification_features")
 config_parameters['outputfolder_training_sample'] = os.path.join(config_parameters['outputfolder'],"Training_sample")
-config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF_TEST")
+config_parameters['outputfolder_classifRF'] = os.path.join(config_parameters['outputfolder'],"Classif_RF_All_points")
 config_parameters['outputfolder_classifRF_tiles'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_tiles")
+config_parameters['outputfolder_classifRF_tiles_probs'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_tiles_probs")
 config_parameters['outputfolder_classifRF_csv'] = os.path.join(config_parameters['outputfolder_classifRF'],"classif_csv")
 config_parameters['outputfolder_classifRF_valid'] = os.path.join(config_parameters['outputfolder_classifRF'],"test_valid")
 
@@ -58,4 +59,4 @@ data['binary_roadnet'] = ('roadnet','../../../Data/squelette_vectoriel/Roadnet_m
 data['binary_built'] = ('built','../../../Data/squelette_vectoriel/Buildings_mask_31370.tif') # 1 m res.
 
 ## Color rule file
-data['color_file'] = "/media/tais/data/WALOUS/Data/fusion_colors.txt"
+data['color_file'] = "/media/tais/data/WALOUS/Landcover/Data/fusion_colors.txt"
