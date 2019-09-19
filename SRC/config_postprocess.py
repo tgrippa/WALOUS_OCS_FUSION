@@ -43,6 +43,8 @@ data['binary_hydro'] = ('hydro','../../../Data/squelette_vectoriel/Hydro_mask_31
 data['binary_roadnet'] = ('roadnet','../../../Data/squelette_vectoriel/Roadnet_mask_31370.tif') # 2 m res.
 data['binary_built'] = ('built','../../../Data/squelette_vectoriel/Buildings_mask_31370.tif') # 1 m res.
 data['binary_rail'] = ('rail','../../../Data/squelette_vectoriel/rail.tif') # 1 m res.
+data['communes'] = ('communes','../../../Data/Communes_BEL/com_bel.shp') # EPSG:31370
+data['CaPa'] = ('CaPa','../../../../Landuse/Data/Plan_cadastral/01000_Belgium_PP-FiscSit_Lb2008_01012019/Bpn_CaPa.shp') # EPSG:3812
 
 ## Color rule file
 data['color_file'] = "/media/tais/data/WALOUS/Landcover/Data/fusion_colors.txt"
