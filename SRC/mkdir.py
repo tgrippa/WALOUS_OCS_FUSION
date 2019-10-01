@@ -6,11 +6,11 @@ Functions for automatic check and creation of folders
 
 import os
 
-def check_create_dir(path):
+def check_create_dir(path, quiet=False):
 	if os.path.exists(path):
-	    print "The folder '%s' already exists"%path 
+	    if not quiet: print "The folder '%s' already exists"%path 
 	else: 
 		os.makedirs(path) 
-		print "The folder '%s' has been created"%path
+		if not quiet: print "The folder '%s' has been created"%path
 		
 #Test ATOM auto-fetch
