@@ -21,8 +21,9 @@ def setup_environmental_variables():
 		os.environ['LD_LIBRARY_PATH']=''
 	# Set environmental variables
 	os.environ['GISBASE'] = config_parameters['GISBASE']
+	os.environ['GRASSBIN'] = config_parameters['GRASSBIN']
 	os.environ['PATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'bin')
-	os.environ['PATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'script')
+	os.environ['PATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'scripts')
 	os.environ['PATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'lib')
 	os.environ['PYTHONPATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'etc','python')
 	os.environ['PYTHONPATH'] += os.pathsep + os.path.join(os.environ['GISBASE'],'etc','python','grass')
@@ -33,7 +34,7 @@ def setup_environmental_variables():
 	os.environ['GISRC'] = os.path.join(os.environ['HOME'],'.grass7','rc')  ## Guess will only works for LINUX
 
 	## Define GRASS-Python environment
-	sys.path.append(os.path.join(os.environ['GISBASE'],'etc','python'))
+	#sys.path.append(os.path.join(os.environ['GISBASE'],'etc','python'))
 
 
 def print_environmental_variables():
@@ -42,4 +43,4 @@ def print_environmental_variables():
 	"""
 	## Display the current defined environment variables
 	for key in os.environ.keys():
-		print "%s = %s \t" % (key,os.environ[key])
+		print ("%s = %s \t" % (key,os.environ[key]))
