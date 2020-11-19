@@ -1,2 +1,2 @@
-# WALOUS_LC project repository
-This repository contains the code developed by the ANAGEO lab in the context of WALOUS project, for the fusion of OBIA and pixel-based land cover maps, using Random Forest classification model.
+# WALOUS_OCS_FUSION project repository
+This repository contains the code developed in the context of WALOUS project, for the fusion of OBIA and pixel-based land cover maps and ancillary datasets, using Random Forest classification model.
